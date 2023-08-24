@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>手册简介 - FIFA 11+（裁判员版）</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html" class="active">手册简介</a></li><li class="chapter-item expanded "><a href="Part_1/index.html"><strong aria-hidden="true">1.</strong> 第一部分 跑动练习</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Part_1/straight.html"><strong aria-hidden="true">1.1.</strong> 直线跑</a></li><li class="chapter-item expanded "><a href="Part_1/circling.html"><strong aria-hidden="true">1.2.</strong> 双人绕圈跑</a></li><li class="chapter-item expanded "><a href="Part_1/zigzag.html"><strong aria-hidden="true">1.3.</strong> Z 字侧滑步</a></li><li class="chapter-item expanded "><a href="Part_1/sprints.html"><strong aria-hidden="true">1.4.</strong> 快速跑</a></li><li class="chapter-item expanded "><a href="Part_1/slalom.html"><strong aria-hidden="true">1.5.</strong> 主裁 – S 形障碍跑</a></li><li class="chapter-item expanded "><a href="Part_1/rotations.html"><strong aria-hidden="true">1.6.</strong> 主裁 – 连续转身跑</a></li><li class="chapter-item expanded "><a href="Part_1/shuffling.html"><strong aria-hidden="true">1.7.</strong> 助理裁判员 – 左右侧滑步交替</a></li><li class="chapter-item expanded "><a href="Part_1/cariocas.html"><strong aria-hidden="true">1.8.</strong> 助理裁判员 – 交叉步</a></li></ol></li><li class="chapter-item expanded "><a href="Part_2/index.html"><strong aria-hidden="true">2.</strong> 第二部分 力量增强与平衡练习</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Part_2/Level_1/index.html"><strong aria-hidden="true">2.1.</strong> 级别一</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Part_2/Level_1/bench.html"><strong aria-hidden="true">2.1.1.</strong> 俯卧支撑两腿交替抬举</a></li><li class="chapter-item expanded "><a href="Part_2/Level_1/sidebench.html"><strong aria-hidden="true">2.1.2.</strong> 动态侧支撑</a></li><li class="chapter-item expanded "><a href="Part_2/Level_1/bridge.html"><strong aria-hidden="true">2.1.3.</strong> 臀桥</a></li><li class="chapter-item expanded "><a href="Part_2/Level_1/hamstrings.html"><strong aria-hidden="true">2.1.4.</strong> 腘绳肌练习</a></li><li class="chapter-item expanded "><a href="Part_2/Level_1/calf.html"><strong aria-hidden="true">2.1.5.</strong> 小腿肌肉练习</a></li><li class="chapter-item expanded "><a href="Part_2/Level_1/squat.html"><strong aria-hidden="true">2.1.6.</strong> 深蹲跳</a></li><li class="chapter-item expanded "><a href="Part_2/Level_1/stance.html"><strong aria-hidden="true">2.1.7.</strong> 主裁 – 单腿支撑</a></li><li class="chapter-item expanded "><a href="Part_2/Level_1/front.html"><strong aria-hidden="true">2.1.8.</strong> 主裁 – 前弓步</a></li><li class="chapter-item expanded "><a href="Part_2/Level_1/lateral.html"><strong aria-hidden="true">2.1.9.</strong> 助理裁判员 – 45° 侧弓步</a></li><li class="chapter-item expanded "><a href="Part_2/Level_1/jumps.html"><strong aria-hidden="true">2.1.10.</strong> 助理裁判员 – 侧向跳跃</a></li></ol></li><li class="chapter-item expanded "><a href="Part_2/Level_2/index.html"><strong aria-hidden="true">2.2.</strong> 级别二</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Part_2/Level_2/bench.html"><strong aria-hidden="true">2.2.1.</strong> 俯卧支撑单腿上提</a></li><li class="chapter-item expanded "><a href="Part_2/Level_2/sidebench.html"><strong aria-hidden="true">2.2.2.</strong> 侧支撑单腿上提</a></li><li class="chapter-item expanded "><a href="Part_2/Level_2/bridge.html"><strong aria-hidden="true">2.2.3.</strong> 臀桥</a></li><li class="chapter-item expanded "><a href="Part_2/Level_2/hamstrings.html"><strong aria-hidden="true">2.2.4.</strong> 腘绳肌练习</a></li><li class="chapter-item expanded "><a href="Part_2/Level_2/calf.html"><strong aria-hidden="true">2.2.5.</strong> 小腿肌肉练习</a></li><li class="chapter-item expanded "><a href="Part_2/Level_2/bouncing.html"><strong aria-hidden="true">2.2.6.</strong> 小跳</a></li><li class="chapter-item expanded "><a href="Part_2/Level_2/hops.html"><strong aria-hidden="true">2.2.7.</strong> 主裁 – 十字单腿跳</a></li><li class="chapter-item expanded "><a href="Part_2/Level_2/scissors.html"><strong aria-hidden="true">2.2.8.</strong> 主裁 – 弓步跳</a></li><li class="chapter-item expanded "><a href="Part_2/Level_2/lateral.html"><strong aria-hidden="true">2.2.9.</strong> 助理裁判员 – 90° 侧弓步</a></li><li class="chapter-item expanded "><a href="Part_2/Level_2/jumps.html"><strong aria-hidden="true">2.2.10.</strong> 助理裁判员 – 侧向跳跃</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="Part_3/index.html"><strong aria-hidden="true">3.</strong> 第三部分 跑动练习</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Part_3/progression.html"><strong aria-hidden="true">3.1.</strong> 渐进跑</a></li><li class="chapter-item expanded "><a href="Part_3/sprints.html"><strong aria-hidden="true">3.2.</strong> 冲刺跑</a></li><li class="chapter-item expanded "><a href="Part_3/sh_diagonal.html"><strong aria-hidden="true">3.3.</strong> 短对角线冲刺</a></li><li class="chapter-item expanded "><a href="Part_3/lo_diagonal.html"><strong aria-hidden="true">3.4.</strong> 长对角线冲刺</a></li><li class="chapter-item expanded "><a href="Part_3/sh_sprints.html"><strong aria-hidden="true">3.5.</strong> 主裁 – 侧滑步 + 短距离快速跑</a></li><li class="chapter-item expanded "><a href="Part_3/lo_sprints.html"><strong aria-hidden="true">3.6.</strong> 主裁 – 侧滑步 + 长距离快速跑</a></li></ol></li><li class="chapter-item expanded "><a href="conclusion.html">结束语</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">FIFA 11+（裁判员版）</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://zzzxj12138.github.io/index/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="手册简介"><a class="header" href="#手册简介">手册简介</a></h1>
+<p>足球裁判员需要具备多方面的技能，包括耐力、灵活性、速度，以及对比赛技战术的理解。所有这些能力都可以在针对性训练中得以提高。除此以外，执法足球比赛还伴随着受伤的风险，包括创伤性伤害（traumatic injury）和过度使用伤害（overuse injury）。因此，一个理想的训练计划还应当加入伤病预防的练习。</p>
+<p>“FIFA® 11+ 裁判员伤病预防项目” 由国际专家组根据 “FIFA® 11+ 伤病预防项目” 以及裁判员特有的伤病情况进行开发，形成一套完整的热身方案，应当取代训练前的常规热身活动。</p>
+<p>著名的《英国医学杂志（<em>British Medical Journal</em>）》于2008年发布的一项科学研究表明，使用 FIFA 11+ 进行热身的青少年足球队受伤风险明显低于沿用常规热身的球队。每周至少进行两次 FIFA 11+ 练习的球队在训练中的受伤减少37%，比赛中的受伤减少29%；严重受伤减少近50%。</p>
+<p>与上届世界杯（2006 &amp; 2007）相比，在最近的世界杯赛场上（2010 &amp; 2011），实施基本的伤病预防项目降低了男女 FIFA 裁判员所遭受的非接触性比赛受伤的发生率。</p>
+<figure align="center">
+    <img src="./figures/introduction/injuries.png" width="40%">
+</figure>
+<h2 id="fifa-11裁判员版结构"><a class="header" href="#fifa-11裁判员版结构">《FIFA 11+（裁判员版）》结构</a></h2>
+<p>《FIFA 11+（裁判员版）》分为三个部分，共 18 项练习，应在每次训练开始时按照指定顺序进行。</p>
+<p>这些练习侧重于裁判员和助理裁判员的特定活动模式。</p>
+<figure align="center">
+    <img src="./figures/introduction/structure.png" width="70%">
+</figure>
+<p><strong>第一部分</strong>：跑动练习</p>
+<p><strong>第二部分</strong>：针对性练习，重点锻炼核心力量、腿部力量、平衡性、力量增强以及灵活性。每项练习都有两个不同难度的动作。</p>
+<p><strong>第三部分</strong>：跑动练习</p>
+<p>该训练的关键在于使用正确的技术动作完成所有练习。要充分关注正确的身体姿势和良好的身体控制，如直腿对齐、膝盖与脚尖的相对位置、落地缓冲等。</p>
+<h2 id="身体姿态"><a class="header" href="#身体姿态">身体姿态</a></h2>
+<p><strong>✅ 正确示范</strong></p>
+<p><img src="./figures/introduction/correct.png" alt="correct" /></p>
+<p><strong>🚫 错误示范</strong></p>
+<p><img src="./figures/introduction/wrong.png" alt="wrong" /></p>
+<h2 id="伤病预防的关键要素"><a class="header" href="#伤病预防的关键要素">伤病预防的关键要素</a></h2>
+<p>对足球裁判员和助理裁判员而言，有效的伤病预防项目的关键要素包括<strong>核心稳定性</strong>、<strong>神经肌肉控制与平衡能力</strong>、<strong>腿后肌群的离心训练</strong>、<strong>力量增强以及灵活性练习</strong>。</p>
+<h3 id="-核心训练"><a class="header" href="#-核心训练">📌 核心训练</a></h3>
+<p>“核心”是一个功能单位，包括躯干肌肉（腹肌、背部伸肌）和盆髋部位的肌肉。保持核心稳定性是充分发挥下肢（尤其是膝盖）能力的关键之一。足球裁判员必须具备足够的髋部和躯干肌肉力量和神经肌肉控制力，以保证核心稳定性。越来越多的科学研究表明，核心稳定性对伤病预防有着重要意义。</p>
+<h3 id="-神经肌肉控制与平衡能力"><a class="header" href="#-神经肌肉控制与平衡能力">📌 神经肌肉控制与平衡能力</a></h3>
+<p>神经肌肉控制并非一个单一的实体，而是复杂的相互作用体系，涉及不同的肌肉活动（静态动作、动态动作、反应性动作）、肌肉激活（离心收缩多于向心收缩）、多关节肌肉协调、稳定性、身体姿态、平衡能力和预判能力。大量的实证经验和科学研究表明，针对特定运动的神经肌肉训练能够有效预防膝关节和踝关节伤病。</p>
+<h3 id="-力量增强与灵活性练习"><a class="header" href="#-力量增强与灵活性练习">📌 力量增强与灵活性练习</a></h3>
+<p>“增强式练习”是指让肌肉在尽可能短的时间内达到最大力量的练习。在许多运动技能中，肌肉离心收缩后会迅速发生向心收缩。因此，必须针对运动员所从事的体育项目，使用特定的功能性练习，强调肌肉动作的快速变化，帮助运动员做好准备。增强式练习的目的是缩短肌肉离心收缩和向心收缩的间隔时间。</p>
+<p>从生物力学角度看，增强式练习能够正确地训练特定的运动模式，从而增强肌肉、肌腱和韧带的能力。力量增强和灵活性练习是伤病预防项目的重要组成部分，已被证明能够有效预防膝关节和踝关节损伤，特别是前交叉韧带损伤。</p>
+<h2 id="激励与执行"><a class="header" href="#激励与执行">激励与执行</a></h2>
+<p>教练（讲师）应当意识到伤病预防项目的重要性及其训练效果。尽管该项目不能预防所有伤病，但定期的预防性锻炼能够显著减少膝盖损伤、脚踝扭伤、肌肉损伤和过度使用问题。</p>
+<p>教练（讲师）应当鼓励裁判员学习《FIFA 11+（裁判员版）》并进行规律、正确的练习。研究表明，准确完成练习动作是保证训练效果的关键。</p>
+<p>最简单的方法是将《FIFA 11+（裁判员版）》中的练习作为每次训练开始时的常规热身活动。</p>
+<p>另外，如果裁判员没有常规的赛前活动，第一部分和第三部分的跑动练习也可以用作赛前热身。</p>
+<blockquote>
+<p><strong>💡 小贴士</strong></p>
+<p>当然，专业的体能教练（讲师）还可以对练习动作进行调整。</p>
+</blockquote>
+<h2 id="如何使用fifa-11裁判员版"><a class="header" href="#如何使用fifa-11裁判员版">如何使用《FIFA 11+（裁判员版）》？</a></h2>
+<p>首先，强调伤病预防的重要性，让所有裁判员都深刻认识到这一点，然后再开始讲解和指导具体练习动作。</p>
+<p>有效开展此项目活动的关键在于从“级别一”做起，专注于正确完成练习动作；仔细纠正所有错误。良好的身体姿态至关重要，有助于实现更好的神经肌肉控制和训练效果。在裁判员能够正确执行动作之后，可以逐步增加持续时间和重复次数，直至达到项目所建议的强度。</p>
+<p>以下步骤有助于指导动作：</p>
+<ol>
+<li>简要讲解并演示该动作；</li>
+<li>指导裁判员进行练习，并提供整体反馈/纠正；</li>
+<li>与所有裁判员讨论出现的问题，并重新演示动作（可邀请一位动作标准的裁判员配合演示）；</li>
+<li>指导裁判员再次进行练习，针对个人提供反馈/纠正。</li>
+</ol>
+<p>以上方法特别适用于<strong>第二部分</strong>的练习动作。第一部分和第三部分的跑动练习所需的讲解和学习时间应该相对较少。一般来说，裁判员大概需要至少两到三次训练，才能正确完成《FIFA 11+（裁判员版）》（级别一）的所有练习动作。</p>
+<h2 id="进阶练习"><a class="header" href="#进阶练习">进阶练习</a></h2>
+<p>裁判员应当从&quot;级别一&quot;开始练习。在裁判员/助理裁判员能够毫无困难地达到指定的时间和数量标准之后，便可以开始进行“级别二”的练习。</p>
+<p>理想情况下，是否开始“级别二”练习应当视每位裁判员的情况单独决定。但在集体训练中，为简单起见，所有裁判员可以在<strong>三到四周</strong>后同时开始“级别二”练习。</p>
+<blockquote>
+<p><strong>📌 小贴士</strong></p>
+<p>对于所有的练习，正确的执行非常重要。因此，教练（讲师）应当对训练加以监督，必要时纠正裁判员的动作。</p>
+</blockquote>
+<h2 id="场地设置"><a class="header" href="#场地设置">场地设置</a></h2>
+<p>训练场地由六对平行的标志筒组成，横向、纵向间距均为 <strong>4 或 6 米</strong>（总长 <strong>20 或 24 米</strong>）。</p>
+<p>两名裁判员同时从第一对标志筒出发，沿标志筒<strong>内侧</strong>慢跑，在此途中完成各项练习。经过最后一个标志筒后，沿场地<strong>外侧跑回</strong>；跑回的速度可随着热身的推进逐渐增加。</p>
+<p><img src="./figures/introduction/field.png" alt="field" /></p>
+<h2 id="参考文献"><a class="header" href="#参考文献">参考文献</a></h2>
+<ol>
+<li>
+<p>Bizzini M, Junge A, Bahr R, Helsen W, Dvorak J. Injuries and musculoskeletal complaints in referees and assistant referees selected for the 2006 FIFA World Cup: retrospective and prospective survey. Br J Sports Med. 2009 Jul; 43(7):490-7. Epub 2008 Jul 4.</p>
+</li>
+<li>
+<p>Bizzini M, Junge A, Bahr R, Dvorak J. Female soccer referees selected for the FIFA Women World Cup 2007: survey of injuries and musculoskeletal problems. Br J Sports Med. 2009 Dec; 43(12):936-42. Epub 2008 Oct 16.</p>
+</li>
+<li>
+<p>Soligard T, Myklebust G, Steffen K, Holme I, Silvers H, Bizzini M, Junge A, Dvorak J, Bahr R, Andersen TE. Comprehensive warm-up programme to prevent injuries in young female footballers: cluster randomised controlled trial. BMJ. 2008 Dec 9; 337%:a2469. doi: 10.1136/bmj.a2469.</p>
+</li>
+<li>
+<p>Soligard T, Nilstad A, Steffen K, Myklebust G, Holme I, Dvorak J, et al. Compliance with a comprehensive warm-up programme to prevent injuries in youth football. Br J Sports Med 2010; 44(11):787-793.</p>
+</li>
+<li>
+<p>Castagna C, Abt G, Dttavio S. Physiological aspects of soccer refereeing performance and training. Sports Med. 2007; 37% (7):625-46. Review.</p>
+</li>
+<li>
+<p>Weston M, Castagna C, Impellizzeri FM, Bizzini M, Williams AM, Gregson W. Science and Medicine Applied to Soccer Refereeing: An Update. Sports Med. 2012 Jul 1; 42(7):615-31. doi: 10.2165/11632360-000000000-00000. Review.</p>
+</li>
+<li>
+<p>Bizzini M, Junge A, Dvorak. The FIFA 11+ Manual. FIFA, Zich, 2011.</p>
+</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+                            <a rel="next" href="Part_1/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+                    <a rel="next" href="Part_1/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
